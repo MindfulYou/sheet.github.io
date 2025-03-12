@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>315后的危机复盘工作坊报名表</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .activity-info {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+        }
+
+        .section-title {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .checkbox-group,
+        .radio-group {
+            margin: 10px 0;
+        }
+
+        .checkbox-group label,
+        .radio-group label {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .submit-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .notice {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .form-container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>315后的危机复盘工作坊报名表</h1>
+        
+        <div class="activity-info">
+            <p><strong>活动时间：</strong><input type="date" required></p>
+            <p><strong>地点：</strong><input type="text" required></p>
+        </div>
+
+        <form id="registrationForm">
+            <!-- 一、核心信息 -->
+            <div class="section">
+                <h2 class="section-title">一、核心信息</h2>
+                <div class="form-group">
+                    <label>姓名：</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>职务：</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>所属行业：</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="industry" required> 快消</label>
+                        <label><input type="radio" name="industry"> 互联网</label>
+                        <label><input type="radio" name="industry"> 金融</label>
+                        <label><input type="radio" name="industry"> 制造业</label>
+                        <label><input type="radio" name="industry"> 其他：<input type="text" style="width: 100px;"></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>企业规模：</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="company-size" required> 创业公司</label>
+                        <label><input type="radio" name="company-size"> 中小型企业</label>
+                        <label><input type="radio" name="company-size"> 大型集团</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>联系电话：</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label>邮箱：</label>
+                    <input type="email" required placeholder="用于接收案例资料">
+                </div>
+            </div>
+
+            <!-- 二、危机管理背景 -->
+            <div class="section">
+                <h2 class="section-title">二、危机管理背景</h2>
+                <div class="form-group">
+                    <label>是否经历过315相关危机事件：</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="crisis-experience" required> 是</label>
+                        <label><input type="radio" name="crisis-experience"> 否</label>
+                    </div>
+                    <input type="text" placeholder="如是，请简述事件类型">
+                </div>
+                <div class="form-group">
+                    <label>危机处理团队规模：</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="team-size" required> 无专职团队</label>
+                        <label><input type="radio" name="team-size"> 1-3人</label>
+                        <label><input type="radio" name="team-size"> 4-10人</label>
+                        <label><input type="radio" name="team-size"> 10人以上</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>希望重点复盘的危机类型（可多选）：</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="crisis-type"> 舆情发酵</label>
+                        <label><input type="checkbox" name="crisis-type"> 法律纠纷</label>
+                        <label><input type="checkbox" name="crisis-type"> 供应链中断</label>
+                        <label><input type="checkbox" name="crisis-type"> 产品质量</label>
+                        <label><input type="checkbox" name="crisis-type"> 高管信任危机</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 三、工作坊需求 -->
+            <div class="section">
+                <h2 class="section-title">三、工作坊需求</h2>
+                <div class="form-group">
+                    <label>参与角色选择：</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="role" required> 案例提供者</label>
+                        <label><input type="radio" name="role"> 策略共创者</label>
+                        <label><input type="radio" name="role"> 观察学习者</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>期望获得的专项能力（可多选）：</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="skills"> 预警系统搭建</label>
+                        <label><input type="checkbox" name="skills"> 媒体应对SOP</label>
+                        <label><input type="checkbox" name="skills"> 内部协同机制</label>
+                        <label><input type="checkbox" name="skills"> 善后修复策略</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>是否需签署保密协议：</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="nda" required> 是</label>
+                        <label><input type="radio" name="nda"> 否</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 四、特别准备 -->
+            <div class="section">
+                <h2 class="section-title">四、特别准备</h2>
+                <div class="form-group">
+                    <label>请描述一个您关注的2025年315案例（50字内）：</label>
+                    <textarea maxlength="100" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>希望导师重点分析的维度：</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="analysis"> 决策链断裂点</label>
+                        <label><input type="checkbox" name="analysis"> 公众情绪拐点</label>
+                        <label><input type="checkbox" name="analysis"> 竞品借势手法</label>
+                        <label><input type="checkbox" name="analysis"> 长效修复措施</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 五、后勤安排 -->
+            <div class="section">
+                <h2 class="section-title">五、后勤安排</h2>
+                <div class="form-group">
+                    <label>是否参加晚间闭门复盘会：</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="evening-meeting" required> 是</label>
+                        <label><input type="radio" name="evening-meeting"> 否</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>特殊需求（如饮食/设备）：</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">提交报名</button>
+        </form>
+
+        <div class="notice">
+            <p><strong>提交说明：</strong></p>
+            <p>1. 报名截止：2025年3月XX日 18:00</p>
+            <p>2. 审核结果将通过邮箱+短信通知，案例提供者需在3个工作日内提交素材包</p>
+            <br>
+            <p><strong>配套文件（可随时索取）：</strong></p>
+            <p>🔹 危机素材匿名化处理指南</p>
+            <p>🔹 模拟推演角色任务卡范例</p>
+            <p>🔹 闭门会保密协议模板</p>
+        </div>
+    </div>
+</body>
+</html>
